@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="styles.css">
+ 
+   <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Delicious Bakery</title>
+  </head>
+  <body>
+   <!-- Header of the website -->
+   <header>
+       <h1>Welcome to Delicious Bakery</h1>
+      
+       <div class="navbar">
+           <a href="index.html">Bakery Home</a>
+           <a href="recipes.html">Recipe Cards</a>
+           <a href="celebrity.html">Celebrity Favorites</a>
+       </div>
+ 
+   </header>
+
+
+   <!-- Main container with Flexbox layout -->
+   <div class="container">
+
+
+       <!-- Main content area with Flexbox layout -->
+       <div class="main-content">
+           <!-- Section for bakery introduction -->
+           <section>
+               <h2>About Us</h2>
+               <p><strong>Delicious Bakery</strong> has been serving the community with freshly baked goods since 1990. We pride ourselves on using the finest ingredients to create <em>mouth-watering</em> pastries, cakes, and breads. Our team of skilled bakers is dedicated to bringing you the best-baked products every day.</p>
+               <p>Our bakery offers a cozy and welcoming atmosphere where you can enjoy our delicious treats. We believe in quality over quantity, and that's why each of our products is made with love and care. Come visit us and experience the <u>Delicious Bakery</u> difference.</p>
+
+
+               <h2>Our Specialties</h2>
+               <p>At <strong>Delicious Bakery</strong>, we specialize in a variety of baked goods. Our <em>signature</em> items include:</p>
+               <ul>
+                   <li>Artisan Breads</li>
+                   <li>Gourmet Cakes</li>
+                   <li>Handcrafted Pastries</li>
+                   <li>Custom Cookies</li>
+                   <li>Gluten-free Options</li>
+               </ul>
+               <p>Each item is crafted with the highest quality ingredients and a passion for baking. Whether you're looking for a special occasion cake or a daily pastry, we have something to satisfy your cravings.</p>
+               <div class="image-container">
+               <img src="Images/cupcake.jpg" alt="cupcake" class="shadowed" class="bordered">
+               </div>
+               <h2>Our Menu</h2>
+               <table>
+                   <tr>
+                       <th>Item</th>
+                       <th>Description</th>
+                       <th>Price</th>
+                   </tr>
+                   <tr>
+                       <td>Artisan Bread</td>
+                       <td>Freshly baked daily with organic flour</td>
+                       <td>$5.00</td>
+                   </tr>
+                   <tr>
+                       <td>Chocolate Cake</td>
+                       <td>Rich and moist with a creamy chocolate ganache</td>
+                       <td>$20.00</td>
+                   </tr>
+                   <tr>
+                       <td>Pastries</td>
+                       <td>Assorted varieties including croissants, danishes, and more</td>
+                       <td>$3.00 each</td>
+                   </tr>
+                   <tr>
+                       <td>Custom Cookies</td>
+                       <td>Decorated to your specifications</td>
+                       <td>$2.50 each</td>
+                   </tr>
+                   <tr>
+                       <td>Gluten-free Muffins</td>
+                       <td>Delicious and safe for gluten-sensitive customers</td>
+                       <td>$4.00 each</td>
+                   </tr>
+               </table>
+           </section>
+
+
+           <!-- Aside for additional information -->
+           <aside>
+               <div class="image-container">
+                   <img src="Images/chocolatecake2.jpg" alt="chocolate cake" class="rounded">
+                   </div>
+               <h2>Special Offers</h2>
+               <p>Join our loyalty program and receive a free pastry with every tenth purchase. Sign up today in-store!</p>
+               <h2>Contact Us</h2>
+               <p>Address: 123 Bakery Lane, Sweet Town</p>
+               <p>Phone: (123) 456-7890</p>
+               <p>Email: info@deliciousbakery.com</p>
+           </aside>
+       </div>
+        <!-- JavaScript -->
+       <h3>Enter your phone number here to be entered into our monthly
+           cookie drawing!</h3>
+           <br>
+           <input id="userInput"> <br><br>
+           <button onclick="myFunction()">Submit</button>
+           <p id="message"></p>
+           <script>function myFunction() {
+           let userInput = document.querySelector ("#userInput");
+           let message = document.querySelector ("#message");
+           message.innerHTML = "Thank your for entering our monthly drawing " + userInput.value;
+           }
+           </script>
+      
+       <h2>Help us select our next best seller!</h2>
+<script>
+function getOption() {
+var obj = document.getElementById("mySelect");
+document.getElementById("demo").innerHTML =
+obj.options[obj.selectedIndex].text;
+}
+</script>
+<form>
+Select the cookie concoction that sounds irresistible:
+<select id="mySelect">
+<option>Pumpkin Spice Walnut</option>
+<option>Orange Peel Creamsicle</option>
+<option>Pineapple Upside Down Cake</option>
+<option>Banana Pudding Pies</option>
+</select>
+<br><br>
+<input type="button" onclick="getOption()" value="Submit!">
+</form>
+<p id="demo"></p>
+       <footer>
+           <p>&copy; 2024 Delicious Bakery. All rights reserved.</p>
+       </footer>
+   </div>
+</body>
+</html>
